@@ -1,0 +1,78 @@
+HOME
+
+Nick Herman
+{Senior UX Engineer}
+
+Link: Return to native layout [only if forcing non-native view via UTH menu]
+
+Main Menu:
+	* About
+	* Resume
+	* Projects
+	
+Util Menu:
+	* Contact
+	* Social
+	* Under The Hood
+	
+Under The Hood Menu:
+	* Change[B]log
+	* NickHerman.com GitHub Repository
+	* Report a Bug
+	* View Other Sizes:
+	  [x] Enable JS
+	  * Mobile
+	  * Tablet
+	  * 800x600
+	  * Native
+	* Change Theme
+	* Select Language
+	* Site Analytics
+	
+	
+	
+
+ABOUT
+
+I'm a UX Designer and Engineer currently heading the UX department at [Pontiflex, Inc]. For the last six years I've been designing, building and refining a variety of products for our advertisers, web publishers and mobile app developers. Prior to joining Pontiflex, I spent seven years as senior web developer at i33 Communications, a small interactive ad agency in Manhattan (now a division of 360i).
+
+When I'm not thinking about ways to make technology less scary I help my wife raise our energetic and inquisitive son. After he goes to bed, I spend time thinking of new ways to cram more tech into nickherman.com, just for fun.
+
+
+RESUME
+
+[Link: PDF] | [Link: RTF]
+
+[Display Resume]
+
+
+PROJECTS
+
+ * AdLeads
+ 
+ 	AdLeads.pontiflex.com is the umbrella under which most of the various Pontiflex products reside.  It's where our advertisers kick off their ad campaigns, our web publishers review their reporting, our mobile developers configure their SDK integrations AND where the Pontiflex boffins manage  hundreds of live campaigns and millions of new bits of lead data every day.
+ 	
+ 	Designing and building a single site that can handle this variety of information and interaction, while allowing for constant revision and expansion, is probably an impossible task.  But we tried anyway.  The front-end is built using JAVA/JSF/RichFaces.
+ 	
+ 	[Link: View AdLeads Dashboard]
+ 	
+ * AdLeads Campaign Planner
+ 
+ 	The AdLeads Campaign Planner is an AdLeads sub-project that lets advertisers create mobile ad campaigns on a self-service basis.  There are two extraordinarily complex requirements here:
+ 	
+ 	1. We must collect information from the user that allows us to compare this new ad campaign to the thousands we have run in the past so that we can determine how to maximize campaign success.  This requires us to quantify some very abstract concepts such as: "how enticing is your offer?"
+ 	
+ 	2. We must get the user, who's interacting with a website, to build a pleasing, interactive ad that will be displayed on a phone or tablet.
+ 	
+ * Pontiflex.com
+ 
+	Textbook example of a basic brochure website.  When your goal is to drive SEO, capture inbound interest and convert customers simplicity is your greatest ally.
+
+	[Link: pontiflex.com click-through]
+	
+	
+ * nickherman.com
+ 
+	I'm just trying to have a little fun with this site.  There isn't much in the way of content, but by exposing the guts of the site on [github] I hope to provide a stellar example of how website development and maintenance should be managed.
+	
+	[Link: site version clickthrough]
