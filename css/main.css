@@ -93,6 +93,43 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+	background: #000;
+	color:#fff;
+}
+
+.wrapper {
+	width: 1000px;
+	margin:0 auto;
+}
+
+.page-header {
+	height: 54px;
+	margin: 27px 20px;
+}
+.page-header h1.title, .page-header h2.title {
+	font-family: 'OsloLight', sans-serif;
+	font-size:1.5em;
+	margin:0;
+	text-align:right;
+}
+
+.page-footer {
+	margin: 0px 20px;
+}
+.page-footer footer {
+	text-align:right;
+}
+.page-footer small {
+	
+}
+.main {
+}
+
+.main .wrapper {
+	background: url(/img/bg.jpg) no-repeat top left;
+	height:540px;
+}
 
 
 
@@ -100,11 +137,61 @@ textarea {
 
 
 
+@font-face {
+    font-family: 'OsloLight';
+    src: url('/font/Oslo-Light-webfont.eot');
+    src: url('/font/Oslo-Light-webfont.eot?iefix') format('eot'),
+         url('/font/Oslo-Light-webfont.woff') format('woff'),
+         url('/font/Oslo-Light-webfont.ttf') format('truetype'),
+         url('/font/Oslo-Light-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'OsloRegular';
+    src: url('/font/Oslo-Regular-webfont.eot');
+    src: url('/font/Oslo-Regular-webfont.eot?iefix') format('eot'),
+         url('/font/Oslo-Regular-webfont.woff') format('woff'),
+         url('/font/Oslo-Regular-webfont.ttf') format('truetype'),
+         url('/font/Oslo-Regular-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'OsloItalic';
+    src: url('/font/Oslo-Italic-webfont.eot');
+    src: url('/font/Oslo-Italic-webfont.eot?iefix') format('eot'),
+         url('/font/Oslo-Italic-webfont.woff') format('woff'),
+         url('/font/Oslo-Italic-webfont.ttf') format('truetype'),
+         url('/font/Oslo-Italic-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'OsloBold';
+    src: url('/font/Oslo-Bold-webfont.eot');
+    src: url('/font/Oslo-Bold-webfont.eot?iefix') format('eot'),
+         url('/font/Oslo-Bold-webfont.woff') format('woff'),
+         url('/font/Oslo-Bold-webfont.ttf') format('truetype'),
+         url('/font/Oslo-Bold-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'OsloBlack';
+    src: url('/font/Oslo-Black-webfont.eot');
+    src: url('/font/Oslo-Black-webfont.eot?iefix') format('eot'),
+         url('/font/Oslo-Black-webfont.woff') format('woff'),
+         url('/font/Oslo-Black-webfont.ttf') format('truetype'),
+         url('/font/Oslo-Black-webfont.svg#webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 
 
