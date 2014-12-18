@@ -1,4 +1,6 @@
 *.log
-
 .DS_Store
 .DS_Store?g
+old
+backups
+logs
