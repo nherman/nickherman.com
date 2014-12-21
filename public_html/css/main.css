@@ -88,8 +88,23 @@ header h3 {
     line-height:24px;
 }
 
+/* transitions enabled class */
+.csstransitions header, .csstransitions nav {
+    opacity:0;
+    -webkit-transition:opacity 6s ease 2s;
+    transition:opacity 6s ease 2s;
+}
+.csstransitions .display-context header, .csstransitions .display-context nav {
+    opacity:1;
+}
 
-
+/* mysterybox */
+.fullscreen-modal-mbox {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
 
 /* ==========================================================================
    Custom Fonts
