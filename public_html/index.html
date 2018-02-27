@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -11,30 +11,49 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="https://unpkg.com/vue@2.5.13/dist/vue.min.js"></script>
     </head>
     <body class="display-context">
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-        <header>
-            <h1>Nick Herman</h1>
-            <h3>UX Engineer / UX Designer / Team Lead</h3>
-        </header>
-        <nav>
-            <ul class="list-inline">
-                <li><a class="hdr-email ir" href="mailto:nick@nickherman.com" title="Email Me">Email</a></li>
-                <li><a class="hdr-linkedin ir" href="http://www.linkedin.com/profile/view?id=26892901" title="LinkedIn">LinkedIn</a></li>
-                <li><a class="hdr-git ir" href="https://github.com/nherman" title="GitHub">GitHub</a></li>
-            </ul>
-        </nav>
+        <div id="app">
+            <header>
+                <h1>{{name}}</h1>
+                <h3>{{content}}</h3>
+            </header>
+            <nav>
+                <ul class="list-inline">
+                    <li v-for="link in links">
+                        <a :class="getClass(link.id)" :href="link.url" :title="link.title">{{link.title}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <script>
-            var _gaq=[['_setAccount','UA-37600859-1'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            function i(id,title,url) {
+                return {
+                    "id":id,
+                    "title":title,
+                    "url":url
+                };
+            }
+
+            var app = new Vue({
+              el: '#app',
+              data: {
+                name: 'Nick Herman',
+                content: 'Senior UI Engineer / Team Lead',
+                links: [
+                    i("email", "Email Me", "mailto:nick@nickherman.com"),
+                    i("linkedin", "LinkedIn", "http://www.linkedin.com/profile/view?id=26892901"),
+                    i("git", "GitHub", "https://github.com/nherman")
+                ]
+              },
+              methods: {
+                getClass: function(id) {
+                    return "hdr-{} ir".replace(/\{\}/,id);
+                }
+              }
+            })
         </script>
     </body>
 </html>
