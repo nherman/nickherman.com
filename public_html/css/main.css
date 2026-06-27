@@ -37,7 +37,8 @@ nav ul {
     display:block;
     padding-left: 0;
     margin: 0 0 0 -5px;
-    list-style: none;    
+    list-style: none;
+    text-align: center;
 }
 nav li {
     display:inline-block;
@@ -48,7 +49,7 @@ nav li a {
     width:32px;
     height:32px;
     background-repeat: no-repeat;
-    margin:0 16px;
+    margin:0 10px;
 }
 
 nav li a.hdr-email {
